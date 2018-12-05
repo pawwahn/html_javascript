@@ -4,7 +4,7 @@ a:link {
     text-decoration: none;
 }
 a:visited {
-    color: pink;
+    color: #19e7ff;
     background-color: transparent;
     text-decoration: none;
 }
@@ -20,6 +20,6 @@ a:active {
 }
 
 h1{
-    color:blueviolet;
+    color:blanchedalmond;
     background-color: dodgerblue; font-size:100%;
 }
