@@ -16,3 +16,8 @@ td.left{
     text-align: right;
 }
 
+caption{
+    color: brown;
+    font-size: 25px;
+}
+
