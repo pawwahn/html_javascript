@@ -24,6 +24,9 @@ h1{
     background-color: dodgerblue; font-size:100%;
 }
 
-p.dotted{
-  border-style: dotted;
+p.ridge{
+  border-style: ridge;
+    border-radius: 5px;
+    font-size: 30px;
+    color: dodgerblue;
 }
