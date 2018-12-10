@@ -23,3 +23,7 @@ h1{
     color:blanchedalmond;
     background-color: dodgerblue; font-size:100%;
 }
+
+p.dotted{
+  border-style: dotted;
+}
