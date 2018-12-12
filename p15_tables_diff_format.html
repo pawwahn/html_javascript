@@ -14,6 +14,20 @@ th, td {
   width: 100%;
   background-color: #f1f1c1;
 }
+
+#t01 tr:nth-child(even) {
+    background-color: powderblue;
+}
+
+#t01 tr:nth-child(odd) {
+    background-color: brown;
+}
+
+#tr01 th{
+    background-color: #f1f1c1;
+}
+
+
 </style>
 </head>
 <body>
@@ -45,7 +59,7 @@ th, td {
 <br>
 
 <table id="t01">
-  <tr>
+  <tr id="tr01">
     <th>Firstname</th>
     <th>Lastname</th>
     <th>Age</th>
