@@ -1,0 +1,17 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>GET TIME</title>
+    <script>
+        function getTime(){
+            document.getElementById('time').innerHTML = Date();
+        }
+    </script>
+</head>
+<body>
+<!--<button type="button" onclick="getTime()" style="color:red; font-size:15px;background-color:green;padding:15px;border:dashed;border-color:yellow;">Time..??</button>-->
+<button type="button" onclick="document.getElementById('time').innerHTML = Date();" style="color:white; font-size:15px;background-color:green;padding:15px;border:dashed;border-color:yellow;">Time..??</button>
+<p id="time"></p>
+</body>
+</html>
