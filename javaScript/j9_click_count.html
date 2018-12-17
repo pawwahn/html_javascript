@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Click Count</title>
+    <script>
+        function incFunc(){
+            console.log("********");
+            var count;
+            count = document.getElementById('demo').innerHTML;
+            console.log(typeof(count));
+            count = parseInt(count)+1;
+            console.log(count);
+            document.getElementById('demo').innerHTML=count;
+            if (count>=10){
+                alert("Huge Volume");
+            }
+
+        }
+
+        function decFunc(){
+            console.log("********");
+            var count;
+            count = document.getElementById('demo').innerHTML;
+            console.log(typeof(count));
+            count = parseInt(count)-1;
+            console.log(count);
+            document.getElementById('demo').innerHTML=count;
+        }
+
+    </script>
+</head>
+<body>
+<button type="button" onclick="incFunc()">Increase Count By Clicking Me</button>
+<button type="button" onclick="decFunc()">Decrease Count By Clicking Me</button>
+<p id="demo">0</p>
+</body>
+</html>

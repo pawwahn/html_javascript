@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Diplay Value By Click</title>
+    <script>
+    function myFunc(){
+        var Car = 'JEEP';
+        console.log(Car)
+        document.getElementById('demo').innerHTML=Car;
+    }
+    </script>
+</head>
+<body>
+<h2>Click the button to find the value defined in the variable</h2>
+<button type="button" onclick="myFunc()">Click</button>
+<p id="demo"></p>
+</body>
+</html>

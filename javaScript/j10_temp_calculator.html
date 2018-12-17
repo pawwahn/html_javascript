@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Tempature Calc..</title>
+    <script>
+        function convertTemp(){
+        far_temp = document.getElementById('tempValue').value;
+        console.log("***")
+        console.log(far_temp)
+        cel_temp = (far_temp * 5)/18;
+        console.log("cel_temp*****")
+        console.log(cel_temp)
+        document.getElementById('celTempValue').value = cel_temp;
+
+        }
+    </script>
+</head>
+<body>
+
+<h2>Temparatute Calc</h2>
+<div>
+<p>Enter Temp :</p>
+    <input type="text" placeholder="Enter Temp" id="tempValue">
+    <button type="button" onclick="convertTemp()">Convert</button>
+    <input type="text" placeholder="Temp in celisius degree" id="celTempValue">
+</div>
+</body>
+</html>

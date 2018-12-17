@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title id="fulName">Object Method Property Value</title>
+    <script>
+        var person = {
+            firstName: 'Pavan',
+            lastName:'Kota',
+            fullName : function(){
+                return this.firstName + " " + this.lastName;
+            }
+        };
+        document.getElementById('fulName').innerHTML = person.fullName();
+
+    </script>
+</head>
+<body>
+<p id="fulNames"></p>
+<script>
+var son = {
+            firstName: 'Pavan',
+            lastName:'Kota',
+            fullName : function(){
+                return this.firstName + " " + this.lastName;
+            }
+        };
+        document.getElementById('fulNames').innerHTML = son.fullName();
+
+    </script>
+
+
+</body>
+</html>
