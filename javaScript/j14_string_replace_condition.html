@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Sting Replace</title>
+    <script>
+        function func(){
+            oldString = document.getElementById('demo').innerHTML;
+            var newString = oldString.replace('STRING','REPLACED');
+            console.log("***");
+            console.log(newString);
+            document.getElementById('demo').innerHTML = newString;
+        }
+    </script>
+</head>
+<body>
+<p id="demo">The word STRING will be replaced when u click the button</p>
+<button type="button" onclick="func()">Click</button>
+</body>
+</html>
