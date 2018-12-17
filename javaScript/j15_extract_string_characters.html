@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Extract String Characters</title>
+    <script>
+        function charAtFun(){
+            var str = "HELLO WORLD";
+            document.getElementById("demo").innerHTML = str.charAt(0);}
+
+        function charCodeAtFun(){
+            var str = "MY WORLD";
+            document.getElementById("demo").innerHTML = str.charCodeAt(0);}
+    </script>
+</head>
+<body>
+<h2>JavaScript String Methods</h2>
+
+<p>The charAt() method returns the character at a given position in a string:</p>
+
+
+<p id="demo"></p>
+
+<button type="button" onclick="charAtFun()">charAt</button>
+
+<button type="button" onclick="charCodeAtFun()">charCodeAt</button>
+
+</body>
+</html>
