@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>ADD ELEMENT WITH OUT PUSH</title>
+    <script>
+        var fruits = ['apple','orange','cherry'];
+        function myFunc(){
+            txt = "<ul>"
+            for(i=0;i<fruits.length;i++){
+                txt+="<li>"+fruits[i]+"</li>"
+            }
+            console.log(txt)
+            fruits[fruits.length] = 'berry';
+            console.log("*")
+            //console.log(fruits[fruits.length])
+            //txt+="<li>"+fruits[fruits.length]+"</li>";
+            txt+="<ul>";
+            console.log(txt)
+            document.getElementById('demo').innerHTML = txt;
+        }
+
+    </script>
+</head>
+<body>
+<button type="button" onclick="myFunc()">Click</button>
+<p id="demo"></p>
+</body>
+</html>
