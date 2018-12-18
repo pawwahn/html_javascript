@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Transport Form</title>
+    <style>
+        table,tr,td{padding:10px;color:black;}
+        .colSpan{padding:-1px}
+        input{width:100%}
+        .semiWidth{width:45%}
+    </style>
+</head>
+<body>
+<form>
+    <fieldset>
+        <legend style="color:blue;">Consigner Information</legend>
+        <div style="">
+            <div style="float:left;">
+            <table>
+            <tr>
+                <td>LR Num</td>
+                <td></td>
+            </tr>
+             <tr>
+                <td>Consigner</td>
+                <td><input type="text" placeholder="Consigner Name"></td>
+            </tr>
+             <tr>
+                <td>Address</td>
+                <td><input type="text" placeholder="Address Line 1"></td>
+            </tr>
+             <tr>
+                <td></td>
+                <td><input type="text" placeholder="Mobile"></td>
+            </tr>
+             <tr>
+                <td></td>
+                <td colspan="2" class="colSpan" ><input type="text" class="semiWidth" placeholder="Mobile">
+                    <input type="text" class="semiWidth" placeholder="Pincode"></td>
+            </tr>
+            <tr>
+                <td></td>
+                <td>
+                    <select>
+                        <option value="Andhra Pradesh">Andhra Pradesh</option>
+                        <option value="Tel">Telangana</option>
+                    </select>
+                </td>
+            </tr>
+            </table>
+            </div>
+
+            <div style="float:right;">
+            <table>
+            <tr>
+                <td>Date Num</td>
+                <td><input type="date"></td>
+            </tr>
+             <tr>
+                <td>Consignee</td>
+                <td><input type="text" placeholder="Consignee Name"></td>
+            </tr>
+             <tr>
+                <td>Address</td>
+                <td><input type="text" placeholder="Address Line 1"></td>
+            </tr>
+             <tr>
+                <td></td>
+                <td><input type="text" placeholder="Mobile"></td>
+            </tr>
+             <tr>
+                <td></td>
+                <td colspan="2" class="colSpan" >
+                    <input type="text" class="semiWidth" placeholder="Mobile">
+                    <input type="text" class="semiWidth" placeholder="Pincode"></td>
+            </tr>
+            <tr>
+                <td></td>
+                <td>
+                    <select>
+                        <option value="Andhra Pradesh">Andhra Pradesh</option>
+                        <option value="Tel">Telangana</option>
+                    </select>
+                </td>
+            </tr>
+        </table>
+            </div>
+        </div>
+    </fieldset>
+
+    <div>
+        <table style="margin:2px;border:2px;">
+            <tr>
+                <td>No. Of Articles</td>
+                <td>Description</td>
+                <td>Weight</td>
+                <td>CDM</td>
+                <td>Others</td>
+            </tr>
+            <tr>
+
+            </tr>
+        </table>
+    </div>
+</form>
+</body>
+</html>
