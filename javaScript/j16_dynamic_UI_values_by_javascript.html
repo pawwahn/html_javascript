@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Array_Dynamic_values</title>
+    <script>
+    function myFunc() {
+        var vehicle = ['CAR', 'BUS', 'TRAIN', 'BIKE'];
+        vehLen = vehicle.length
+        txt = "<ul>";
+        for (i = 0; i < vehLen; i++) {
+            txt = txt + "<li>" + vehicle[i] + "</li>"
+        }
+        txt += "</ul>";
+        document.getElementById('demo').innerHTML = txt;
+    }
+    </script>
+
+</head>
+<body>
+
+<button type="button" onclick="myFunc()">Click</button>
+<p id="demo"></p>
+</body>
+</html>
