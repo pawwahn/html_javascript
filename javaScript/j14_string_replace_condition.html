@@ -10,11 +10,19 @@
             console.log("***");
             console.log(newString);
             document.getElementById('demo').innerHTML = newString;
+
+            smallString = document.getElementById('small').innerHTML;
+            var bigString = smallString.toUpperCase()
+            document.getElementById('small').innerHTML = bigString;
         }
     </script>
 </head>
 <body>
 <p id="demo">The word STRING will be replaced when u click the button</p>
-<button type="button" onclick="func()">Click</button>
+<p id="small">small letters are defined here.. once button is clicked, these small letters will be changed to capital letters..</p>
+<button type="button" onclick="func()" onmouseenter="style='color:blue;padding:15px;cursor:pointer'"
+        onmouseleave="style='color:blue;background-color:tomato' "
+        onmouseover="style='cursor:pointer;'"
+        >Click</button>
 </body>
 </html>
