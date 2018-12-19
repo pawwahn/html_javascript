@@ -4,13 +4,32 @@
     <meta charset="UTF-8">
     <title>Transport Form</title>
     <style>
-        table,tr,td{padding:10px;color:black;border-color:blue;}
+        table,tr,td{padding:10px;color:black;border-color:blue;box-sizing: border-box;}
+
         .colSpan{padding:-1px}
-        input{width:100%}
+
+        input{width:100%;margin: 5px 1px;border: 1px solid #ccc;}
+
         .semiWidth{width:45%}
+
+        #previous,next[type=button]:hover{
+            background-color: red;}
+
+        .tableBorderStyle{width:15%;border:1px solid #555555;height:35px;text-align: center;}
+
+        .thBorderStyle{width:15%;border:1px solid #555555;padding:10px;background-color: #cccccc;height:35px;font-size: large}
+
+        .inputText{border:1px solid #555555;height:260px}
+
+
     </style>
 </head>
 <body>
+<h2 style="">PARCEL REQUEST</h2>
+<br>
+<button id="previous" type="button" style="float: left;color: #f1f1f1;background-color: #4CAF50;padding: 5px;width:8%;">Previous</button>
+<button id="next" type="button" style="float: right;color: #f1f1f1;background-color: #4CAF50;padding: 7px;width:8%;">Next</button>
+<br><br><br>
 <form>
     <fieldset>
         <legend style="color:blue;">Consigner Information</legend>
@@ -27,11 +46,11 @@
             </tr>
              <tr>
                 <td>Address</td>
-                <td><input type="text" placeholder="Address Line 1"></td>
+                <td><input type="text" placeholder="Address Line 1..."></td>
             </tr>
              <tr>
                 <td></td>
-                <td><input type="text" placeholder="Mobile"></td>
+                <td><input type="text" placeholder="Address Line 2..."></td>
             </tr>
              <tr>
                 <td></td>
@@ -62,11 +81,11 @@
             </tr>
              <tr>
                 <td>Address</td>
-                <td><input type="text" placeholder="Address Line 1"></td>
+                <td><input type="text" placeholder="Address Line 1..."></td>
             </tr>
              <tr>
                 <td></td>
-                <td><input type="text" placeholder="Mobile"></td>
+                <td><input type="text" placeholder="Address Line 2..."></td>
             </tr>
              <tr>
                 <td></td>
@@ -87,26 +106,33 @@
             </div>
         </div>
     </fieldset>
-
+    <br>
     <div>
-        <table style="margin:2px;border:2px;">
-            <tr>
-                <th></th>
-                <th></th>
-                <th colspan="2">Weight</th>
-                <th></th>
-                <th colspan="2">Others</th>
+        <table style="margin:2px;border:2px;width:100%;border: 1px solid #ccc;">
+            <tr style="margin:2px;border:2px;width:100%;border: 2px solid #ccc;">
+                <th class="thBorderStyle"></th>
+                <th class="thBorderStyle"></th>
+                <th colspan="2" style="text-align: center" class="thBorderStyle">Weight</th>
+                <th class="thBorderStyle"></th>
+                <th colspan="2" style="text-align: center" class="thBorderStyle">Others</th>
             </tr>
             <tr>
-                <td>No. Of Articles</td>
-                <td>Description</td>
-                <td>Qs.</td>
-                <td>KGs</td>
-                <td>CDM</td>
-                <td>Details</td>
-                <td>Rs.</td>
+                <td class="tableBorderStyle">No. Of Articles</td>
+                <td class="tableBorderStyle">Description</td>
+                <td class="tableBorderStyle">Qs.</td>
+                <td class="tableBorderStyle">KGs</td>
+                <td class="tableBorderStyle">CDM</td>
+                <td class="tableBorderStyle">Details</td>
+                <td class="tableBorderStyle">Rs.</td>
             </tr>
             <tr>
+                <td class="inputText"></td>
+                <td class="inputText"></td>
+                <td class="inputText"></td>
+                <td class="inputText"></td>
+                <td class="inputText"></td>
+                <td class="inputText"></td>
+                <td class="inputText"></td>
 
             </tr>
         </table>
