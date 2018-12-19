@@ -8,7 +8,7 @@
 
         .colSpan{padding:-1px}
 
-        input{width:100%;margin: 5px 1px;border: 1px solid #ccc;}
+        input{width:100%;margin: 5px 1px;border: 1px solid #ccc;height:22px;}
 
         .semiWidth{width:45%}
 
@@ -19,18 +19,18 @@
 
         .thBorderStyle{width:15%;border:1px solid #555555;padding:10px;background-color: #cccccc;height:35px;font-size: large}
 
-        .inputText{border:1px solid #555555;height:260px}
+        .inputText{border: none !important;width:99%;height: 338px;border-radius: 0px !important;border-right: none !important;}
 
-
+        .inputValues{height:36px;}
     </style>
 </head>
 <body>
-<h2 style="">PARCEL REQUEST</h2>
-<br>
+<h2 style="color:blue;">PARCEL REQUEST</h2>
+
 <button id="previous" type="button" style="float: left;color: #f1f1f1;background-color: #4CAF50;padding: 5px;width:8%;">Previous</button>
 <button id="next" type="button" style="float: right;color: #f1f1f1;background-color: #4CAF50;padding: 7px;width:8%;">Next</button>
-<br><br><br>
-<form>
+<br><br>
+<form style="padding:32px;">
     <fieldset>
         <legend style="color:blue;">Consigner Information</legend>
         <div style="">
@@ -125,14 +125,31 @@
                 <td class="tableBorderStyle">Details</td>
                 <td class="tableBorderStyle">Rs.</td>
             </tr>
-            <tr>
-                <td class="inputText"></td>
-                <td class="inputText"></td>
-                <td class="inputText"></td>
-                <td class="inputText"></td>
-                <td class="inputText"></td>
-                <td class="inputText"></td>
-                <td class="inputText"></td>
+            <tr style="border:2px solid black;margin: 2px;">
+                <td style="padding: 0px !important;width:5%;border: 1px solid #aea4a4 !important;"><textarea class="inputText" id="nOA"></textarea></td>
+                <td style="padding: 0px !important;width:5%;border: 1px solid #aea4a4 !important;"><textarea class="inputText" id="description"></textarea></td>
+                <td style="padding: 0px !important;width:5%;border: 1px solid #aea4a4 !important;"><textarea class="inputText" id="qS"></textarea></td>
+                <td style="padding: 0px !important;width:5%;border: 1px solid #aea4a4 !important;"><textarea class="inputText" id="kGS"></textarea></td>
+                <td style="padding: 0px !important;width:5%;border: 1px solid #aea4a4 !important;"><textarea class="inputText" id="cDM"></textarea></td>
+                <td>
+                    <input id="other_col1" readonly="true" style="width:100%;padding-left: 12px;height: 36px;margin-top: 5px;" value="Freight">
+                    <input id="other_col2" readonly="true" style="width:100%;padding-left: 12px;height: 36px;margin-top: 5px;" value="H.C">
+                    <input id="other_col3" readonly="true" style="width:100%;padding-left: 12px;height: 36px;margin-top: 5px;" value="A.C">
+                    <input id="other_col4" readonly="true" style="width:100%;padding-left: 12px;height: 36px;margin-top: 5px;" value="R.C">
+                    <input id="other_col5" readonly="true" style="width:100%;padding-left: 12px;height: 36px;margin-top: 5px;" value="S.C">
+                    <input id="other_col6" readonly="true" style="width:100%;padding-left: 12px;height: 36px;margin-top: 5px;" value="C.C.C">
+                    <input id="other_col7" readonly="true" style="width:100%;padding-left: 12px;height: 36px;margin-top: 5px;" value="D.D.C">
+                </td>
+                <td class="inputText">
+                    <input class="inputValues" id="frieghtValue" type="text"><br>
+                    <input class="inputValues" id="hCValue" type="text"><br>
+                    <input class="inputValues" id="acValue" type="text"><br>
+                    <input class="inputValues" id="rcValue" type="text"><br>
+                    <input class="inputValues" id="scValue" type="text"><br>
+                    <input class="inputValues" id="cccValue" type="text"><br>
+                    <input class="inputValues" id="ddcValue" type="text"><br>
+
+                </td>
 
             </tr>
         </table>
